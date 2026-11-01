@@ -1,0 +1,105 @@
+
+:root {
+    --primary: #6E2B15;
+    --background: #000000;
+    --surface: #151515;
+    --surface-hover: #202020;
+    --text: #FFFFFF;
+    --border: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background: var(--background);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid var(--primary);
+    border-color: var(--primary);
+}
+
+button,
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: var(--primary);
+    color: var(--text);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    background: #87371D;
+}
+
+.sidebar {
+    background: var(--background);
+    border-right: 1px solid var(--border);
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: var(--primary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background: var(--surface-hover);
+    color: var(--text);
+}
+
+.muted {
+    color: #BBBBBB;
+}
